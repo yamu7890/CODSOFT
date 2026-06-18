@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f5f9;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.calculator-wrapper {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 340px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    background: #1e293b;
+    border: none;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Strictly implementing the requested CSS grid layout */
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    height: 60px;
+    background: #334155;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #475569;
+}
+
+.btn-action {
+    background: #f97316;
+}
+.btn-action:hover {
+    background: #ea580c;
+}
+
+.btn-equal {
+    background: #10b981;
+    grid-row: span 2;
+    height: 132px;
+}
+.btn-equal:hover {
+    background: #059669;
+}
+
+.zero {
+    grid-column: span 2;
+}
